@@ -16,9 +16,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
   return (
-    <BrowserRouter>//  dynamic url updates without loading full page
-      {/* ✅ Single header visible on all pages */} //navigation between different pages 
-      
+    <BrowserRouter>
 
       <Routes>
         <Route path="/" element={<Landing />} />
