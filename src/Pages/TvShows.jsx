@@ -39,7 +39,7 @@ const TvShows = () => {
 
   // ✅ Slugify utility for clean URLs
   const slugify = (title) =>
-    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "");
+    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 
   // ✅ Filter TV Shows based on search
   const filteredShows = allTvShows.filter((show) =>

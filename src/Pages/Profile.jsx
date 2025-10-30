@@ -6,6 +6,7 @@ import Header from '../Components/Header';
 import Footer from '../Components/Footer';
 import { FaAngleRight, FaSearch } from 'react-icons/fa';
 import '../Styles/Profile.css';
+import { Link } from 'react-router-dom';
 
 function Profile() {
   const [user, setUser] = useState({
@@ -123,9 +124,9 @@ function Profile() {
   };
 
   // Navigate to profile (if you have a separate link for account)
-  const handleAccount = () => {
-    navigate('/profile'); // redirect to profile page
-  };
+  // const handleAccount = () => {
+  //   navigate('/profile'); // redirect to profile page
+  // };
 
   return (
     <div>
@@ -204,10 +205,10 @@ function Profile() {
 
             <div className="acc-dtl">
               <h6>Account Details</h6>
-              <a className='PROFILE'>PROFILE</a>
+              <Link to="/profile" className="profile-link">PROFILE</Link>
               <a href="#change-password">CHANGE PASSWORD</a>
               {/* Use handleAccount if you have a separate account link */}
-              <a className="logout" onClick={handleLogout}>LOG OUT</a>
+            <button className="logout" onClick={handleLogout}>LOG OUT</button>
             </div>
           </div>
 

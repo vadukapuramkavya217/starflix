@@ -56,7 +56,7 @@ const Movies = () => {
   const [moviesPerPage, setMoviesPerPage] = useState(20);
 
   const slugify = (title) =>
-    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "");
+    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 
   const filteredMovies = allmovies.filter((movie) =>
     movie.title.toLowerCase().includes(query.toLowerCase())

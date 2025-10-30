@@ -39,7 +39,7 @@ const Newpopular = () => {
   const totalPages = Math.ceil(totalMovies / moviesPerPage);
 
   const slugify = (title) =>
-    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "");
+    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
