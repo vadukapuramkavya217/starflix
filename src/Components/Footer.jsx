@@ -15,7 +15,7 @@ const Footer = () => {
           <Col xs={12} md={6} className="footer-left">
             <p>© 2025 StarFlix. All Rights Reserved.</p>
           </Col>
-          <Col xs={12} md={6} className="footer-right text-md-end text-center"> //xs-extra small-phones, md-medium -tabs
+          <Col xs={12} md={6} className="footer-right text-md-end text-center"> 
             <button onClick={scrollToTop} className="back-to-top-btn">
               Back to top ↑
             </button>

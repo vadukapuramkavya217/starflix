@@ -43,7 +43,7 @@ const MovieSlide = () => {
 
   // Utility to convert title to URL-friendly slug
   const slugify = (title) =>
-    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9\-]/g, "");
+    title.toLowerCase().replace(/\s+/g, "-").replace(/[^a-z0-9-]/g, "");
 
   return (
     <div
