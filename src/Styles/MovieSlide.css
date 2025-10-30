@@ -1,0 +1,228 @@
+.movie-slide-wrapper {
+  width: 100%;
+  height: 80vh;
+  padding: 20px 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+/* Ensure header sticks tightly */
+.sticky-navbar {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* Remove space on movie slide wrapper */
+.movie-slide-wrapper {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+
+.movie-slide-wrapper::before {
+  content: "";
+  background-color: #0f2133;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  z-index: 0;
+}
+
+.overlay-content {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+
+.slide-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 7px;
+  padding: 20px;
+}
+
+.slide-left {
+  max-width: 60%;
+}
+
+.slide-right img {
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+
+.badges {
+  margin-bottom: 10px;
+}
+
+.badges .badge {
+  margin-right: 10px;
+  font-size: 12px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.genre-drama {
+  background-color: #007bff;
+}
+
+.genre-comedy {
+  background-color: #ffc107;
+}
+
+.genre-action {
+  background-color: #dc3545;
+}
+
+.genre-historical {
+  background-color: #ec5a1a;
+}
+
+.genre-war {
+  background-color: #ec5a1a;
+}
+
+.genre-thriller {
+  background-color: #17a2b8;
+}
+
+.description {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.buttons button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.meta {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.detail-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+.detail-btn:hover {
+  background-color: #020d18;
+  color: #fead07;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  z-index: 10;
+}
+
+.carousel-control-prev {
+  left: -5em !important;
+  /* Adjust as needed */
+}
+
+.carousel-control-next {
+  right: -5em !important;              
+  /* Adjust as needed */
+}
+
+
+
+@media screen and (max-width: 767.90px) {
+  .movie-slide-wrapper {
+    height: 73vh;
+    padding: 20px 20px;
+
+
+  }
+
+  .slide-content {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+
+  }
+
+  .slide-left {
+    max-width: 100%;
+  }
+
+  .slide-right img {
+    display: none;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: fit-content !important;
+  }
+
+  .badges .badge {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width:992.90px) {
+  .movie-slide-wrapper {
+    height: 50vh;
+    padding: 20px 40px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    width: fit-content !important;
+  }
+
+  .badges .badge {
+    font-size: 12px;
+    padding: 4px 10px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width:1200px) {
+     .movie-slide-wrapper {
+    height: 60vh;
+  }
+
+}

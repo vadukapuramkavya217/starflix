@@ -1,0 +1,98 @@
+/* Sticky Navbar Container */
+.sticky-navbar {
+ position: sticky;
+ top: 0;
+ z-index: 10;
+}
+
+/* Custom Navbar */
+.navbar.custom-navbar {
+  background-color: #0f2133 !important;
+  padding: 10px 80px !important;
+}
+
+/* Toggler Styling */
+.navbar-toggler {
+  border: 2px solid white;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 35px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0;
+}
+
+.custom-toggler-bar {
+  display: block;
+  width: 25px;
+  height: 4px;
+  background-color: white;
+  margin: 3px 0;
+  border-radius: 2px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: white !important;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #fead07;
+}
+
+/* Profile Image */
+
+/* Remove arrow and style dropdown */
+.custom-dropdown .dropdown-toggle::after {
+  display: none; /* removes the arrow */
+}
+
+.custom-dropdown .dropdown-menu {
+  background-color: #021d39; /* blue background */
+  color: white; /* default text color white */
+}
+
+.custom-dropdown .dropdown-item {
+  color: white; /* text color */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: white; /* darker blue on hover */
+  color: white;
+}
+
+.custom-dropdown .dropdown-divider {
+  border-top: 1px solid white; /* white divider */
+}
+
+
+.nav-link img {
+  margin-left: 1em;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/* Collapse margin top for spacing on small screens */
+.navbar-collapse {
+  margin-top: 10px;
+}
+
+/* Responsive Padding */
+@media screen and (max-width: 767.90px) {
+  .navbar.custom-navbar {
+    padding: 10px 20px !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .navbar.custom-navbar {
+    padding: 20px 40px !important;
+  }
+}

@@ -1,0 +1,129 @@
+/* ===== Landing Page ===== */
+.landing-page {
+  height: 100vh;
+  background-color: #12aee5;
+  background-image: url('../../public/Images/login-bg.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 1;
+}
+
+.landing-container {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.landing-container img {
+  width: 200px;
+}
+
+.landing-text {
+  margin: 60px 0;
+  line-height: 56px;
+}
+
+.landing-text h2 {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 64px;
+}
+
+/* ===== Text color for "movies, series, and more" ===== */
+.landing-text .text-blue {
+  color: #12aee5 !important;
+  font-weight: 700;
+}
+
+/* Normal subtext */
+.landing-text .normal-text {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+/* ===== Login Button ===== */
+.btn-login {
+  padding: 20px 100px;
+  background-color: #12aee5 !important;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #0ea0d2 !important; /* slightly darker hover shade */
+}
+
+/* ===== Bootstrap Modal Overrides for Login ===== */
+ .login-modal-content {
+  background: white;
+  padding: 60px;
+  width: 480px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+} 
+
+/* Title inside modal */
+ .login-modal-content h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+} 
+
+/* Form labels */
+ .login-modal-content .form-label {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+} 
+
+/* Form inputs */
+ .login-modal-content .form-control {
+  border: 1px solid rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  outline: none;
+} 
+
+/* ===== Login Button Inside Modal ===== */
+.btn-login-page {
+  background-color: #12aee5;
+  border: none;
+  color: white;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s;
+  width: 100%;
+}
+
+.btn-login-page:hover {
+  background-color: #0ea0d2;
+}
+
+/* Remove Bootstrap modal header/footer */
+ .modal-header, .modal-footer {
+  display: none;
+}
+
+.modal-body {
+  padding: 0; /* match design */
+} 

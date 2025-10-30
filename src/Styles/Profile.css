@@ -1,0 +1,200 @@
+/* Base Layout */
+.profilepage {
+  background-color: #020d18;
+  padding: 50px 100px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.profile-text {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Profile Image Container */
+.img-text {
+  border: 2px solid rgba(255, 255, 255, 0.34);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: fit-content;
+  max-width: 300px;
+
+}
+
+.profile-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.34);
+  text-align: center;
+}
+
+.profile-img img {
+  /* width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover; */
+  margin-bottom: 1.5em;
+}
+
+.custom-upload-btn {
+  padding: 8px 16px;
+  margin: 10px;
+  background-color: #1fb4ff;
+  color: white;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.custom-upload-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Account Details */
+.acc-dtl {
+  padding: 30px;
+  font-weight: bold;
+  line-height: 2.5;
+  cursor: pointer;
+}
+
+.acc-dtl h6 {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.acc-dtl a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.acc-dtl .logout {
+  color: red;
+}
+
+/* Form Container */
+.form-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #0b1c2c;
+  padding: 2em;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.form-container h4 {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Form Groups */
+.userform {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+ 
+.form-group input {
+  padding: 12px;
+  background-color: #1f2d3d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #ccc;
+}
+
+/* Buttons */
+.form-container  button {
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #1fb6ff;
+  color: white;
+  width: fit-content;
+  font-weight: bold;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-container  button:hover {
+  background-color: #007acb;
+}
+
+/* Password Form Section */
+.usr-psd {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+  .profilepage {
+    padding: 40px 30px;
+  }
+
+  .profile-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+
+  .img-text {
+    max-width: 100%;
+  }
+
+}
+
+
+@media (min-width: 768px) and (max-width:992px) {
+  .profilepage {
+    padding: 40px 60px;
+  }
+
+  .profile-text {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-group {
+    flex: 1 1 100%;
+  }
+  .img-text {
+    max-width: 95%;
+  }
+
+}
+
+@media (min-width: 993px) {
+  .profile-text {
+    flex-wrap: nowrap;
+  }
+
+}
